@@ -1,10 +1,10 @@
-import express from "express";
+const express=require("express");
 const app=express();
 const port=9000;
-app.listen(9000,()=>{
-    console.log('starting port on server',9000);
+app.listen(port,()=>{
+    console.log('starting port on server',port);
 
 })
-app.listen("/",(req,res)=>{
+app.get("/app",(req,res)=>{
   res.json({message:"hello from express app"});
 })
