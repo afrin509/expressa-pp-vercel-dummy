@@ -5,6 +5,6 @@ app.listen(port,()=>{
     console.log('starting port on server',port);
 
 })
-app.get("/app",(req,res)=>{
+app.get("/",(req,res)=>{
   res.json({message:"hello from express app"});
 })
